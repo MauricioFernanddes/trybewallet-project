@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-// import { fetchCurrencies } from '../redux/actions';
+import { fetchCurrencies } from '../redux/actions';
 
 class WalletForm extends Component {
   componentDidMount() {
