@@ -1,4 +1,4 @@
-import { SAVE_CURRENCY } from '../actions';
+import { SAVE_CURRENCY, SAVE_WALLET_FORM_DATA } from '../actions';
 
 const INITIAL_STATE = {
   currencies: [],
@@ -13,6 +13,11 @@ const walletReducer = (state = INITIAL_STATE, action) => {
     return {
       ...state,
       currencies: action.payload,
+    };
+  case SAVE_WALLET_FORM_DATA:
+    return {
+      ...state,
+      expenses: [...state.expenses, action.walletFormData],
     };
   default:
     return state;
