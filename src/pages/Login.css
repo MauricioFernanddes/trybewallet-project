@@ -1,76 +1,82 @@
 * {
-    text-decoration: none;
-  }
-  .page-login {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #9c5959;
-    background-image: url(/imgs/foto\ fundo.svg);
-  }
-  
-  .form-login {
-    /* height: 35rem; */
-    width: 25rem;
-    border-radius: 20px;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;  
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255, 0, 0, 0.2);
-    border-left: 1px solid rgba(255, 0, 0, 0.2);
-    box-shadow: 5px 5px 30px rgba(255, 0, 0, 0.2);
-  }
-  
-  .form-login > h1{
-    color: #0011ff;
-    font-size: 2.5rem;
-    padding-bottom: 2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  
-  .field-login {
-    height: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    border: none;
-    background: rgba(255, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-  }  
-  .field-login::placeholder {
-    color: rgb(255, 0, 0);
-    font-size: 1rem;
-  }  
-  .field-login:focus {
-    outline: none;
-    transform: scale(1.04);
-  }  
-  .btn-login {
-    background: rgba(0, 0, 0, 0.5);
-    color: rgba(255, 0, 0, 0.877);
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: all 0.5s ease;
-  }
-  
-  a, a:hover, a:focus, a:active {
-    text-decoration: none;
-  };
-  
-  .btn-login:hover:not(:disabled) {
-    transform: scale(2.04);
-  }
-  
-  .btn-login:disabled {
-    opacity: 0.2;
-  }
+  text-decoration: none;
+}
+
+.page-login {
+  align-items: center;
+  background-color: #9c5959;
+  background-image: url('/imgs/foto-fundo.svg');
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.form-login {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 1px solid rgba(255, 0, 0, 0.2);
+  border-radius: 20px;
+  border-top: 1px solid rgba(255, 0, 0, 0.2);
+  box-shadow: 5px 5px 30px rgba(255, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem;
+  width: 25rem;
+}
+
+.form-login > h1 {
+
+  /* color: #0011ff; */
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.field-login {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 0, 0, 0.2);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  height: 1rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.field-login::placeholder {
+  color: red;
+  font-size: 1rem;
+}
+
+.field-login:focus {
+  outline: none;
+  transform: scale(1.04);
+}
+
+.btn-login {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 0, 0, 0.877);
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+/* a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+} */
+
+.btn-login:disabled {
+  opacity: 0.2;
+}
+
+.btn-login:hover:not( :disabled ) {
+  transform: scale(1.05);
+}
