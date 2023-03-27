@@ -55,6 +55,7 @@ class WalletForm extends Component {
         <label htmlFor="inputNumber">
           Valor:
           <input
+            className="field-wallet"
             data-testid="value-input"
             id="inputNumber"
             type="text"
@@ -66,6 +67,7 @@ class WalletForm extends Component {
         <label htmlFor="currency">
           Moeda:
           <select
+            className="field-wallet"
             data-testid="currency-input"
             name="currency"
             id="currency"
@@ -85,6 +87,7 @@ class WalletForm extends Component {
         <label htmlFor="methodPayment">
           Método de pagamento:
           <select
+            className="field-wallet"
             name="method"
             id="methodPayment"
             data-testid="method-input"
@@ -99,6 +102,7 @@ class WalletForm extends Component {
         <label htmlFor="category">
           Categoria
           <select
+            className="field-wallet"
             name="tag"
             id="category"
             data-testid="tag-input"
@@ -115,6 +119,7 @@ class WalletForm extends Component {
         <label htmlFor="description">
           Descrição:
           <input
+            className="field-wallet"
             type="text"
             name="description"
             id="description"
@@ -123,7 +128,10 @@ class WalletForm extends Component {
             onChange={ this.handleChange }
           />
         </label>
-        <button type="submit">
+        <button
+          type="submit"
+          className="field-wallet"
+        >
           Adicionar despesa
         </button>
       </form>

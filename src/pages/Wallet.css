@@ -1,0 +1,48 @@
+/* stylelint-disable order/properties-alphabetical-order */
+.page-wallet {
+  background-image: url('../../imgs/bg1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  opacity: 0.9;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.section-header {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  width: 80vw;
+  height: 20vh;
+
+  /* padding: 2rem; */
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  /* align-items: center; */
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+
+.field-wallet {
+  height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.582);
+  backdrop-filter: blur(10px);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
